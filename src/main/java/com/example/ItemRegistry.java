@@ -1,16 +1,18 @@
 package com.example;
 
 public class ItemRegistry {
-
     public static void main(String[] args) {
+        var item1 = new StoreItem.StoreItemBuilder("Grape dolma", 8.99)
+                .shortDescription("Azerbaijani dish")
+                .longDescription("Delicious dish of stuffed grape leaves filled with a mixture of minced meat, rice, and aromatic herbs like cilantro, mint, and dill")
+                .stockAvailable(7)
+                .build();
 
-        var item1 = new StoreItem(
-                "Pretzel", 2.0, "A tasty snack", null, 7, null);
+        var item2 = new StoreItem.StoreItemBuilder("Soup", 1.5)
+                .longDescription("A meal that you can warm up at home. It can come in different flavours including tomato, chicken, and vegetable")
+                .packagingType("Can")
+                .build();
 
-        var item2 = new StoreItem(
-                "Soup", 1.5, null,
-                "A meal that you can warm up at home. It can come in different flavours including tomato, chicken, and vegetable",
-                null, "Can");
 
         addToItemRegistry(item1);
         addToItemRegistry(item2);
