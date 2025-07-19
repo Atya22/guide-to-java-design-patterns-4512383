@@ -16,4 +16,5 @@ public abstract class Graphic {
         this.heightInPixels = heightInPixels;
     }
 
+    public abstract Graphic clone();
 }
