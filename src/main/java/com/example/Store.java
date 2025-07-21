@@ -6,7 +6,7 @@ public class Store {
 
 
     public static void main(String[] args) {
-        buySnack("ChocolateBar");
+        buySnack("Chocolate Bar");
         buySnack("Chips");
         buySnack("Drink");
     }
