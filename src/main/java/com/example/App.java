@@ -6,6 +6,10 @@ public class App {
         var englishLocalizedMessage = new EnglishLocalizedMessage();
         var englishGreeting = new Greeting(englishLocalizedMessage);
         englishGreeting.print();
+
+        var frenchLocalizedMessage = new FrenchMessageAdapter();
+        var frenchGreeting = new Greeting(frenchLocalizedMessage);
+        frenchGreeting.print();
     }
 
 }
